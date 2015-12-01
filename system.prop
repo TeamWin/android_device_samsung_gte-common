@@ -17,7 +17,7 @@ ro.use_data_netmgrd=false
 persist.data.netmgrd.qos.enable=false
 
 # Display
-ro.sf.lcd_density=320
+ro.sf.lcd_density=160
 debug.composition.type=c2d
 debug.sf.gpu_comp_tiling=1
 debug.mdpcomp.idletime=600
@@ -58,7 +58,7 @@ ro.qualcomm.bt.hci_transport=smd
 ro.nfc.sec_hal=true
 
 # Misc.
-ro.chipname=MSM8916
+ro.chipname=APQ8016
 ro.warmboot.capability=1
 ro.qualcomm.cabl=0
 

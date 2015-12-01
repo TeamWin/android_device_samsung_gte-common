@@ -23,7 +23,7 @@
 # inherit from qcom-common
 -include device/samsung/qcom-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/samsung/a5-common
+LOCAL_PATH := device/samsung/gt58-common
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8916
@@ -36,7 +36,7 @@ TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_CPU_VARIANT := cortex-a53
 TARGET_CPU_CORTEX_A53 := true
 
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/a5-common/include
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/gt58-common/include
 
 # Kernel
 TARGET_KERNEL_ARCH := arm
@@ -53,29 +53,24 @@ TARGET_KERNEL_SOURCE := kernel/samsung/msm8916
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 13631488
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 15728640
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2516582400
-BOARD_PERSISTIMAGE_PARTITION_SIZE := 8388608
-BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
-BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
-# (12775829504 - 16384)
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 12775813120
-
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3145728000
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 12138295296
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/a5-common/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/gt58-common/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
 
 # Custom RIL class
-BOARD_RIL_CLASS := ../../../device/samsung/a5-common/ril/
+BOARD_RIL_CLASS := ../../../device/samsung/gt58-common/ril/
 
 # NFC
 BOARD_HAVE_NFC := true
 
 # GPS
-TARGET_GPS_HAL_PATH := device/samsung/a5-common/gps
+TARGET_GPS_HAL_PATH := device/samsung/gt58-common/gps
 BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 
 # Fonts
@@ -133,7 +128,7 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 COMMON_GLOBAL_CFLAGS += -DCAMERA_VENDOR_L_COMPAT
 
 # CMHW
-BOARD_HARDWARE_CLASS += device/samsung/a5-common/cmhw
+BOARD_HARDWARE_CLASS += device/samsung/gt58-common/cmhw
 
 # Workaround to avoid issues with legacy liblights on QCOM platforms
 TARGET_PROVIDES_LIBLIGHT := true
@@ -163,10 +158,10 @@ BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
-    device/samsung/a5-common/sepolicy
+    device/samsung/gt58-common/sepolicy
 
 # Misc.
-TARGET_SYSTEM_PROP := device/samsung/a5-common/system.prop
+TARGET_SYSTEM_PROP := device/samsung/gt58-common/system.prop
 
 # TWRP
 # Display
@@ -178,11 +173,11 @@ TW_NEW_ION_HEAP := true
 TW_TARGET_USES_QCOM_BSP := true
 
 # Keys
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/a5-common/recovery/recovery_keys.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/gt58-common/recovery/recovery_keys.c
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # Storage
-TARGET_RECOVERY_FSTAB := device/samsung/a5-common/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/samsung/gt58-common/rootdir/etc/fstab.qcom
 TW_INTERNAL_STORAGE_PATH := "/data/media"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
