@@ -1,0 +1,13 @@
+[
+  {
+    "repository": "android_device_samsung_qcom-common",
+    "target_path": "device/samsung/qcom-common",
+    "dep_type": "device"
+  },
+  {
+    "repository": "android_kernel_samsung_msm8916",
+    "target_path": "kernel/samsung/msm8916",
+    "dep_type": "kernel"
+  }
+]
+
