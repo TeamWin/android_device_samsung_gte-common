@@ -165,6 +165,7 @@ TARGET_SYSTEM_PROP := device/samsung/gt58-common/system.prop
 
 # TWRP
 # Display
+TW_THEME := portrait_mdpi
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
 TW_BRIGHTNESS_PATH := "/sys/devices/soc.0/1a00000.qcom\x2cmdss_mdp/qcom\x2cmdss_fb_primary.139/leds/lcd-backlight/brightness"
