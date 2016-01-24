@@ -22,11 +22,7 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/gt58-common/overlay
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.crda.sh \
     init.qcom.bt.sh \
-    init.qcom.coex.sh
-
-PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.rc \
     init.qcom.power.rc \
