@@ -61,6 +61,11 @@ PRODUCT_COPY_FILES += \
 # We have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
 
+# This is a tablet.
+PRODUCT_CHARACTERISTICS := tablet
+PRODUCT_AAPT_CONFIG := xlarge mdpi
+PRODUCT_AAPT_PREF_CONFIG := mdpi
+
 # Common msm8916-common
 $(call inherit-product, device/samsung/msm8916-common/msm8916.mk)
 
