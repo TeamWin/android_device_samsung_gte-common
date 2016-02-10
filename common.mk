@@ -20,16 +20,6 @@ $(call inherit-product-if-exists, vendor/samsung/gt58-common/gt58-common-vendor.
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/gt58-common/overlay
 
-# Ramdisk
-PRODUCT_PACKAGES += \
-    init.qcom.bt.sh \
-    fstab.qcom \
-    init.qcom.rc \
-    init.qcom.power.rc \
-    init.qcom.usb.rc \
-    init.recovery.qcom.rc \
-    ueventd.qcom.rc
-
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/acdb/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
@@ -45,10 +35,6 @@ PRODUCT_COPY_FILES += \
 # Override the keylayout in msm8916-common
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
-
-# For TWRP
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # We have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
