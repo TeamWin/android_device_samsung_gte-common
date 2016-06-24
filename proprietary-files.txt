@@ -22,12 +22,6 @@ vendor/lib/libbtnv.so
 
 # Sensors
 lib/hw/sensors.msm8916.so
-lib/libalgobsx.so
-
-# NFC
-lib/hw/nfc_nci.msm8916.so
-etc/sec_s3fwrn5_rfreg.bin
-vendor/firmware/sec_s3fwrn5_firmware.bin
 
 # FM Radio
 bin/fm_qsoc_patches
@@ -36,8 +30,8 @@ bin/fm_qsoc_patches
 bin/mm-qcamera-daemon
 lib/hw/camera.vendor.msm8916.so
 lib/libqomx_core.so
-vendor/lib/libactuator_dw9804_a7_camcorder.so
-vendor/lib/libactuator_dw9804_a7_camera.so
+vendor/lib/libactuator_dw9804_rossa_camcorder.so
+vendor/lib/libactuator_dw9804_rossa_camera.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegehw.so
 vendor/lib/libmmcamera2_c2d_module.so
@@ -52,19 +46,15 @@ vendor/lib/libmmcamera2_sensor_modules.so
 vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/libmmcamera2_vpe_module.so
 vendor/lib/libmmcamera2_wnr_module.so
-vendor/lib/libmmcamera_dw_dw9806b_eeprom.so
+vendor/lib/libmmcamera_silicon_sr544_eeprom.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_hdr_gb_lib.so
 vendor/lib/libmmcamera_hdr_lib.so
 vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_image_stab.so
-vendor/lib/libmmcamera_imx135.so
-vendor/lib/libmmcamera_lsi_s5k5e3yx_eeprom.so
-vendor/lib/libmmcamera_rohm_brce064gwz_eeprom.so
-vendor/lib/libmmcamera_s5k5e3yx.so
 vendor/lib/libmmcamera_silicon_sr544_eeprom.so
-vendor/lib/libmmcamera_sunny_p5v23c_eeprom.so
-vendor/lib/libmmcamera_sunny_p12v01m_eeprom.so
+vendor/lib/libmmcamera_sr200pc20.so
+vendor/lib/libmmcamera_sr544.so
 vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmipl.so
@@ -72,26 +62,12 @@ vendor/lib/libmmjpeg.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/liboemcamera.so
 vendor/lib/libqomx_jpegenc.so
-lib/libchromatix_imx135_common.so
-lib/libchromatix_imx135_common_1080p_b.so
-lib/libchromatix_imx135_common_1080p_s.so
-lib/libchromatix_imx135_common_res0.so
-lib/libchromatix_imx135_common_res1.so
-lib/libchromatix_imx135_common_res2.so
-lib/libchromatix_imx135_common_res3.so
-lib/libchromatix_imx135_default_video.so
-lib/libchromatix_imx135_golfshot.so
-lib/libchromatix_imx135_hfr_120.so
-lib/libchromatix_imx135_hfr_1080p_b.so
-lib/libchromatix_imx135_hfr_1080p_s.so
-lib/libchromatix_imx135_liveshot.so
-lib/libchromatix_imx135_lowres_zslshot.so
-lib/libchromatix_imx135_panorama.so
-lib/libchromatix_imx135_pip.so
-lib/libchromatix_imx135_preview.so
-lib/libchromatix_imx135_snapshot.so
-lib/libchromatix_imx135_uhd_video.so
-lib/libchromatix_imx135_zslshot.so
+vendor/lib/libchromatix_sr544_common.so
+vendor/lib/libchromatix_sr544_default_video.so
+vendor/lib/libchromatix_sr544_panorama.so
+vendor/lib/libchromatix_sr544_preview.so
+vendor/lib/libchromatix_sr544_snapshot.so
+vendor/lib/libchromatix_sr544_zslshot.so
 lib/libmmcamera2_stats_algorithm.so
 lib/libmmcamera_cac2_lib.so
 lib/libmmcamera_interface.so
@@ -99,22 +75,11 @@ lib/libmmcamera_wavelet_lib.so
 lib/libmmjpeg_interface.so
 lib/libjpega.so
 lib/libexifa.so
-vendor/lib/libchromatix_imx135_vt.so
-vendor/lib/libchromatix_imx135_vt_hd.so
-vendor/lib/libchromatix_s5k5e3yx_wide_common.so
-vendor/lib/libchromatix_s5k5e3yx_wide_pip.so
-vendor/lib/libchromatix_s5k5e3yx_wide_preview.so
-vendor/lib/libchromatix_s5k5e3yx_wide_snapshot.so
-vendor/lib/libchromatix_s5k5e3yx_wide_video.so
-vendor/lib/libchromatix_s5k5e3yx_wide_vt.so
-vendor/lib/libchromatix_s5k5e3yx_wide_vt_hd.so
-vendor/lib/libchromatix_s5k5e3yx_wide_zslshot.so
 lib/libAl_Awb.so
 lib/libAl_Awb_Sp.so
 lib/libaf_algo_rear.so
 lib/libaec_algo_front.so
 lib/libawb_algo_rear_al.so
-lib/libawb_algo_front_al.so
 lib/libaec_algo_rear.so
 
 # Camera firmware
@@ -122,23 +87,23 @@ etc/firmware/cpp_firmware_v1_1_1.fw
 etc/firmware/cpp_firmware_v1_1_6.fw
 etc/firmware/cpp_firmware_v1_2_0.fw
 etc/firmware/cpp_firmware_v1_4_0.fw
-etc/B05QL_s5k5e3yx_module_info.xml
-etc/F13QS_imx135_module_info.xml
+etc/A05QF_sr544_module_info.xml
+etc/B05QF_sr544_module_info.xml
+etc/C05QF_sr544_module_info.xml
 
 # DRM
 bin/qseecomd
-lib/libdrmdecrypt.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
 vendor/lib/libQSEEComAPI.so
 vendor/lib/librpmb.so
 vendor/lib/libssd.so
-vendor/lib/libwvdrm_L1.so
-vendor/lib/liboemcrypto.so
-vendor/lib/libwvm.so
-vendor/lib/drm/libdrmwvmplugin.so
-vendor/lib/libWVStreamControlAPI_L1.so
-vendor/lib/mediadrm/libwvdrmengine.so
+# Using Hammerhead blobs
+#lib/liboemcrypto.so
+#vendor/lib/drm/libdrmwvmplugin.so
+#vendor/lib/mediadrm/libwvdrmengine.so
+#vendor/lib/libdrmdecrypt.so
+#vendor/lib/libwvdrm_L1.so
 
 # Keystore
 vendor/lib/lib-sec-disp.so
@@ -179,8 +144,6 @@ vendor/lib/libbccQTI.so
 # Graphics firmware
 etc/firmware/a300_pfp.fw
 etc/firmware/a300_pm4.fw
-vendor/firmware/a330_pfp.fw
-vendor/firmware/a330_pm4.fw
 
 # Media
 lib/libOmxVdecHevc.so
@@ -243,16 +206,13 @@ lib/libfactoryutil.so
 lib/libsecnativefeature.so
 lib/libomission_avoidance.so
 lib/librmnetctl.so
-etc/plmn_se13.bin
-etc/plmn_delta.bin
 
 # Thermal
-vendor/bin/thermal-engine
+bin/thermal-engine
 vendor/lib/libthermalclient.so
 vendor/lib/libthermalioctl.so
 
 # Time services
--app/TimeService/TimeService.apk
 bin/time_daemon
 -vendor/lib/libtime_genoff.so
 vendor/lib/libTimeService.so
@@ -275,25 +235,27 @@ etc/firmware/Signedrompatch_v20.bin
 lib/hw/audio_policy.default.so
 lib/hw/audio.primary.msm8916.so
 lib/libSamsungPreProcess.so
+lib/libSamsungPostProcess.so
 lib/libsamsungRecord.so
-lib/libsamsungRecord_ns.so
-lib/libsamsungRecord_zoom.so
 lib/lib_SamsungRec_V04012.so
 lib/lib_Samsung_Resampler.so
 lib/lib_SamsungVAD_v01007.so
 lib/libsamsungVoipResampler.so
 lib/libsamsungvad.so
-lib/lib_SoundAlive_play_ver125e.so
+lib/libSamsungAudioEngine_SideSync.so
+lib/libSamsungMusic_tablet_v4.so
+lib/libsamsungSoundbooster_ext.so
+lib/libsamsungSoundbooster_pgb.so
+lib/lib_SoundAlive_3DPosition_ver107.so
+lib/lib_SoundAlive_play_plus_ver126a.so
 lib/lib_soundaliveresampler.so
 lib/lib_SoundAlive_SRC192_ver205.so
 lib/lib_SoundAlive_ver118t.so
+lib/libSoundAlive_VSP_ver315b_arm.so
+lib/lib_SoundBooster_ver606.so
 lib/lib_DNSe_EP_ver216b.so
-lib/lib_DNSe_NRSS_ver226.so
-lib/lib_Samsung_AudioZoom_v102.so
 lib/libsamsungpowersound.so
-lib/libtfa9895.so
 lib/libmysound.so
-lib/libaudio-ril.so
 lib/libaudioroute.so
 lib/libaudiosa.so
 lib/libtinyalsa.so
