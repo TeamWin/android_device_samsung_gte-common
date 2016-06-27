@@ -15,7 +15,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-SAMSUNG_TARGETS := gt58wifixx
+SAMSUNG_TARGETS := gt58wifixx,gt510wifixx
 
 ifneq ($(filter $(SAMSUNG_TARGETS),$(TARGET_DEVICE)),)
 

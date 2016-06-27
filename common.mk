@@ -15,22 +15,10 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/gt58-common/gt58-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/gt5-common/gt5-common-vendor.mk)
 
 # Common overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/gt58-common/overlay
-
-# Audio
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/acdb/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
-    $(LOCAL_PATH)/audio/acdb/General_cal.acdb:system/etc/General_cal.acdb \
-    $(LOCAL_PATH)/audio/acdb/Global_cal.acdb:system/etc/Global_cal.acdb \
-    $(LOCAL_PATH)/audio/acdb/Handset_cal.acdb:system/etc/Handset_cal.acdb \
-    $(LOCAL_PATH)/audio/acdb/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
-    $(LOCAL_PATH)/audio/acdb/Headset_cal.acdb:system/etc/Headset_cal.acdb \
-    $(LOCAL_PATH)/audio/acdb/Speaker_cal.acdb:system/etc/Speaker_cal.acdb \
-    $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml \
-    $(LOCAL_PATH)/audio/Tfa9895.cnt:system/etc/Tfa9895.cnt
+DEVICE_PACKAGE_OVERLAYS += device/samsung/gt5-common/overlay
 
 # Keylayouts
 PRODUCT_COPY_FILES += \

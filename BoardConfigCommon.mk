@@ -23,7 +23,7 @@
 # inherit from msm8916-common
 -include device/samsung/msm8916-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/samsung/gt58-common
+LOCAL_PATH := device/samsung/gt5-common
 
 # Partition sizes
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -34,7 +34,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 12138278912
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/gt58-common/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/gt5-common/bluetooth
 
 # Misc.
-TARGET_SYSTEM_PROP := device/samsung/gt58-common/system.prop
+TARGET_SYSTEM_PROP := device/samsung/gt5-common/system.prop
