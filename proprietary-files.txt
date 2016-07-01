@@ -23,9 +23,6 @@ vendor/lib/libbtnv.so
 # Sensors
 lib/hw/sensors.msm8916.so
 
-# FM Radio
-bin/fm_qsoc_patches
-
 # Camera
 bin/mm-qcamera-daemon
 lib/hw/camera.vendor.msm8916.so
