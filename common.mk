@@ -31,7 +31,7 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 
 # This is a tablet.
 PRODUCT_CHARACTERISTICS := tablet
-PRODUCT_AAPT_CONFIG := xlarge mdpi
+PRODUCT_AAPT_CONFIG := xlarge
 PRODUCT_AAPT_PREF_CONFIG := mdpi
 
 # Common msm8916-common
