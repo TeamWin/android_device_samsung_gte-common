@@ -38,3 +38,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/gt5-common/bluetoo
 
 # Misc.
 TARGET_SYSTEM_PROP := device/samsung/gt5-common/system.prop
+
+# Prebuilt RIL
+USE_DEVICE_SPECIFIC_DATASERVICES := true
