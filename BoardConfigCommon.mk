@@ -23,21 +23,21 @@
 # inherit from msm8916-common
 -include device/samsung/msm8916-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/samsung/gt5-common
+LOCAL_PATH := device/samsung/gtel-common
 
 # Partition sizes
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 13631488
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 15728640
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3145728000
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 12138278912
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 251658240
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 12767424512
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/gt5-common/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/gtel-common/bluetooth
 
 # Misc.
-TARGET_SYSTEM_PROP := device/samsung/gt5-common/system.prop
+TARGET_SYSTEM_PROP := device/samsung/gtel-common/system.prop
 
 # Prebuilt RIL
 USE_DEVICE_SPECIFIC_DATASERVICES := true
