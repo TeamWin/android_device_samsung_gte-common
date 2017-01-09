@@ -31,6 +31,7 @@ PRODUCT_PACKAGES += \
 	audio.primary.default \
 	audio_policy.msm8916 \
 	audio.r_submix.default \
+	audio.tms.default \
 	audio.usb.default \
 	audiod \
 	libaudio-resampler \
@@ -41,6 +42,7 @@ PRODUCT_PACKAGES += \
 	libqcomvisualizer \
 	libqcomvoiceprocessing \
 	libqcmediaplayer \
+	libtinycompress \
 	tinymix \
 	tinyplay \
 	tinycap \
@@ -145,6 +147,10 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
 	$(LOCAL_PATH)/keylayout/Generic.kl:system/usr/keylayout/Generic.kl \
 	$(LOCAL_PATH)/keylayout/synaptics_rmi4_i2c.kl:system/usr/keylayout/synaptics_rmi4_i2c.kl
+
+# libxml2
+PRODUCT_PACKAGES += \
+	libxml2
 
 # Keystore
 PRODUCT_PACKAGES += \
