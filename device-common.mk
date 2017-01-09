@@ -57,6 +57,10 @@ PRODUCT_BOOT_JARS += \
 	qcom.fmradio \
 	tcmiface
 
+# BoringSSL Hacks
+PRODUCT_PACKAGES += \
+	libboringssl-compat
+
 # Connectivity Engine support
 PRODUCT_PACKAGES += \
 	libcnefeatureconfig
@@ -219,6 +223,7 @@ PRODUCT_PACKAGES += \
 	libkeyutils \
 	libjpega \
 	libexifa \
+	libstlport \
 	datatop \
 	sockev \
 	librmnetctl
