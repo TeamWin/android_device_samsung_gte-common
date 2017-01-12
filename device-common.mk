@@ -54,7 +54,6 @@ PRODUCT_PACKAGES += \
 
 # Boot jars
 PRODUCT_BOOT_JARS += \
-	qcom.fmradio \
 	tcmiface
 
 # BoringSSL Hacks
@@ -99,20 +98,6 @@ PRODUCT_PACKAGES += \
 	ebtables \
 	ethertypes \
 	libebtc
-
-# FM
-PRODUCT_PACKAGES += \
-	FM2 \
-	FMRecord \
-	libqcomfm_jni \
-	qcom.fmradio
-
-ADDITIONAL_BUILD_PROPERTIES += \
-	hw.fm.mode=normal
-
-# FM workaround
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/prebuilt/enableRadioFM:system/etc/init.d/enableRadioFM
 
 #ViperFX
 PRODUCT_PACKAGES += \
