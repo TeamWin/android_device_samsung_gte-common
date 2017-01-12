@@ -76,10 +76,6 @@ PRODUCT_PACKAGES += \
 	libmm-qcamera \
 	camera.msm8916
 	
-# Doze
-PRODUCT_PACKAGES += \
-	SamsungDoze
-	
 # Touch issue workaround
 PRODUCT_PACKAGES += \
 	InputDisabler
