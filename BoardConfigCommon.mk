@@ -190,7 +190,7 @@ BOARD_SEPOLICY_DIRS += \
 BOARD_USES_QC_TIME_SERVICES := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/samsung/gtel-common/recovery/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/samsung/gtel-common/recovery/recovery.fstab
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/gtel-common/recovery/recovery_keys.c
 BOARD_HAS_LARGE_FILESYSTEM			:= true
 TARGET_RECOVERY_DENSITY 			:= hdpi
