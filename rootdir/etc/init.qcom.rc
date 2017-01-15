@@ -460,6 +460,9 @@ on boot
     chown system radio /sys/class/power_supply/battery/batt_temp_table
 
  # KSM tuning
+on property:ro.config.ksm=false
+    write /sys/kernel/mm/ksm/run 0
+
 on property:ro.config.ksm=true
     write /sys/kernel/mm/ksm/pages_to_scan 100
     write /sys/kernel/mm/ksm/sleep_millisecs 500
