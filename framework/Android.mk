@@ -1,5 +1,5 @@
 LOCAL_PATH:= $(call my-dir)
-ifneq ($(filter gtelwifiue, $(TARGET_DEVICE)),)
+ifneq ($(filter gtelwifiue gtesqltespr, $(TARGET_DEVICE)),)
 ########################
 ##com.google.widevine.software.drm
 include $(CLEAR_VARS)

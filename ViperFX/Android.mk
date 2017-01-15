@@ -1,5 +1,5 @@
 LOCAL_PATH:= $(call my-dir)
-ifneq ($(filter gtelwifiue, $(TARGET_DEVICE)),)
+ifneq ($(filter gtelwifiue gtesspr, $(TARGET_DEVICE)),)
 ########################
 ##viperfx.apk
 include $(CLEAR_VARS)

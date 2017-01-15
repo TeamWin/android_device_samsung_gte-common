@@ -1,6 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter gtelwifiue, $(TARGET_DEVICE)),)
+ifneq ($(filter gtelwifiue gtesqltespr, $(TARGET_DEVICE)),)
 ######################
 ### fstab.qcom
 include $(CLEAR_VARS)

@@ -1,6 +1,6 @@
 LOCAL_PATH:= $(call my-dir)
 #Fix InputDisabler to support all the devices to reduce duplication.
-ifneq ($(filter gtelwifiue, $(TARGET_DEVICE)),)
+ifneq ($(filter gtelwifiue gtesqltespr, $(TARGET_DEVICE)),)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE_TAGS := optional

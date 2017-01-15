@@ -132,7 +132,11 @@ BOARD_RAMDISK_OFFSET     := 0x02000000
 TARGET_KERNEL_CONFIG := msm8916_sec_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
 TARGET_KERNEL_SELINUX_LOG_CONFIG := selinux_log_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/galaxy
+ifeq ($(TARGET_DEVICE), gtesqltespr)
+	TARGET_KERNEL_SOURCE := kernel/samsung/gtesqltespr
+else
+	TARGET_KERNEL_SOURCE := kernel/samsung/galaxy
+endif
 
 # Keymaster
 TARGET_HW_KEYMASTER_V03 := true
