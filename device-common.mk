@@ -95,11 +95,6 @@ PRODUCT_PACKAGES += \
 	ethertypes \
 	libebtc
 
-#ViperFX
-PRODUCT_PACKAGES += \
-	libv4a_fx_ics \
-	ViperFX
-
 # Ramdisk
 PRODUCT_PACKAGES += \
 	fstab.qcom \
