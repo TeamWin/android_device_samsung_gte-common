@@ -7,6 +7,9 @@ LOCAL_PATH := device/samsung/gtel-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
+# Release
+CM_BUILDTYPE := NIGHTLY
+
 TARGET_WANTS_SILENT_PAGE_RECORDS := true
 
 # ANT+
