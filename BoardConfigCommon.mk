@@ -181,6 +181,7 @@ TARGET_USES_NEW_ION_API := true
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
 # RIL
+BOARD_RIL_CLASS    := ../../../device/samsung/gtel-common/ril
 TARGET_RIL_VARIANT := caf
 #override to enable audio.
 BOARD_PROVIDES_LIBRIL := false
