@@ -48,10 +48,6 @@ PRODUCT_PACKAGES += \
 	tinycap \
 	tinypcminfo
 
-# Charger
-PRODUCT_PACKAGES += \
-    charger_res_images
-
 # Boot jars
 PRODUCT_BOOT_JARS += \
 	tcmiface
