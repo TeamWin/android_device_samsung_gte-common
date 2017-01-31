@@ -243,8 +243,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.vendor.extension_library=libqti-perfd-client.so \
 	persist.gps.qc_nlp_in_use=1 \
 	persist.loc.nlp_name=com.qualcomm.location \
-	ro.telephony.samsung.realcall=true \
-	cm.updater.uri=http://grandprime.ddns.net/OTA/api
+	ro.telephony.samsung.realcall=true
 
 # This is a tablet.
 PRODUCT_CHARACTERISTICS := tablet
