@@ -142,10 +142,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	lights.msm8916
 
-# Live Wallpapers
-PRODUCT_PACKAGES += \
-	librs_jni
-
 # Default Property Overrides
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mtp \
@@ -272,13 +268,6 @@ PRODUCT_PACKAGES += Terminal
 # USB
 PRODUCT_PACKAGES += \
 	com.android.future.usb.accessory
-
-# Live Wallpapers
-PRODUCT_PACKAGES += \
-	LiveWallpapers \
-	LiveWallpapersPicker \
-	VisualizationWallpapers \
-	librs_jni
 
 # Wifi configuration files
 PRODUCT_COPY_FILES += \
