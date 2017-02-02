@@ -12,6 +12,28 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_PACKAGES += \
 	InputDisabler
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+	fstab.qcom \
+	init.carrier.rc \
+	init.class_main.sh \
+	init.ksm.sh \
+	init.mdm.sh \
+	init.qcom.audio.sh \
+	init.qcom.bt.sh \
+	init.qcom.uicc.sh \
+	init.qcom.wifi.sh \
+	init.qcom.post_boot.sh \
+	init.qcom.class_core.sh \
+	init.qcom.early_boot.sh \
+	init.qcom.syspart_fixup.sh \
+	init.qcom.usb.rc \
+	init.qcom.usb.sh \
+	init.qcom.rc \
+	init.qcom.fm.sh \
+	init.qcom.sh \
+	ueventd.qcom.rc
+
 # Keylayout
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/keylayout/Synaptics_RMI4_TouchPad_Sensor.idc:system/usr/idc/Synaptics_RMI4_TouchPad_Sensor.idc \
