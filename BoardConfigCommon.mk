@@ -1,7 +1,7 @@
-LOCAL_PATH := device/samsung/gtel-common
-
 # Inherit from common
 -include device/samsung/msm8916-common/BoardConfigCommon.mk
+
+LOCAL_PATH := device/samsung/gtel-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
