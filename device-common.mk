@@ -23,10 +23,6 @@ LOCAL_PATH := device/samsung/gte-common
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# Touch issue workaround
-PRODUCT_PACKAGES += \
-	InputDisabler
-
 # Ramdisk
 PRODUCT_PACKAGES += \
 	init.target.rc
