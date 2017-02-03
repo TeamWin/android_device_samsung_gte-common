@@ -1,7 +1,7 @@
 # Inherit from common
 -include device/samsung/msm8916-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/samsung/gtel-common
+LOCAL_PATH := device/samsung/gte-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
@@ -34,7 +34,7 @@ BOARD_FLASH_BLOCK_SIZE              := 131072
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
 # RIL
-BOARD_RIL_CLASS    := ../../../device/samsung/gtel-common/ril
+BOARD_RIL_CLASS    := ../../../device/samsung/gte-common/ril
 TARGET_RIL_VARIANT := caf
 #override to enable audio.
 BOARD_PROVIDES_LIBRIL := false
