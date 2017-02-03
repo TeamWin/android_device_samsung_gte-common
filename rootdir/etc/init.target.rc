@@ -1,0 +1,8 @@
+on init
+    # Shims
+    export LD_SHIM_LIBS /system/lib/libcrypto.so|libboringssl-compat.so
+
+on boot
+# KSM tuning
+on property:ro.config.ksm=false
+    write /sys/kernel/mm/ksm/run 0
