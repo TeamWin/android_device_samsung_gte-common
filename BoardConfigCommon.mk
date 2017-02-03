@@ -43,8 +43,5 @@ BOARD_FLASH_BLOCK_SIZE              := 131072
 #Includes
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
-# RIL
-BOARD_RIL_CLASS    := ../../../device/samsung/gte-common/ril
-TARGET_RIL_VARIANT := caf
-#override to enable audio.
+# Override to enable audio.
 BOARD_PROVIDES_LIBRIL := false

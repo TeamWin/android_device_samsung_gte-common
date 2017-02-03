@@ -37,10 +37,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.camera.autofocus.xml:system/etc/permissions/android.hardware.camera.autofocus.xml
 
-# Properties
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.telephony.samsung.realcall=true
-
 # This is a tablet.
 PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_AAPT_CONFIG := xlarge
