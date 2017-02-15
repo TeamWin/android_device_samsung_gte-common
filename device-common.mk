@@ -42,6 +42,11 @@ ifneq ($(CM_UPDATER_OTA_URI),)
 	PRODUCT_PROPERTY_OVERRIDES += $(CM_UPDATER_OTA_URI)
 endif
 
+# Properties
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.config.vc_call_vol_steps=15 \
+	ro.config.media_vol_steps=30
+
 # This is a tablet.
 PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_AAPT_CONFIG := xlarge
