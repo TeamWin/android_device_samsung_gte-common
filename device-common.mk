@@ -37,6 +37,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.camera.autofocus.xml:system/etc/permissions/android.hardware.camera.autofocus.xml
 
+# append the updater uri to the product properties if set
+ifneq ($(CM_UPDATER_OTA_URI),)
+	PRODUCT_PROPERTY_OVERRIDES += $(CM_UPDATER_OTA_URI)
+endif
+
 # This is a tablet.
 PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_AAPT_CONFIG := xlarge
