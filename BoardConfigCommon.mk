@@ -15,6 +15,9 @@
 #
 LOCAL_PATH := device/samsung/gte-common
 
+# Audio
+USE_QCOM_MIXER_PATHS := 1
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
