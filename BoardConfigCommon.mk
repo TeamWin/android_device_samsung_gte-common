@@ -18,15 +18,8 @@ include device/samsung/msm8916-common/BoardConfigCommon.mk
 
 LOCAL_PATH := device/samsung/gte-common
 
-# Platform
-BOARD_VENDOR := samsung
-TARGET_BOARD_PLATFORM := msm8916
-
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
-
-# Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := MSM8916
 
 # FM
 TARGET_QCOM_NO_FM_FIRMWARE := true
