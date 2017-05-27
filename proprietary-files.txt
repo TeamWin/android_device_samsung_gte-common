@@ -1,0 +1,21 @@
+# Samsung Package Version T560NUUEU1BPI3_T560NUXAC1BPI3_XAC (unless otherwise specified and/or tagged)
+
+# Audio
+lib/libaudiosa.so
+lib/libmysound.so
+lib/soundfx/libaudioeffectoffload.so
+lib/soundfx/libmyspace.so
+
+# Qualcomm framework
+vendor/lib/libdiag.so
+vendor/lib/libdsutils.so
+vendor/lib/libidl.so
+vendor/lib/libqcci_legacy.so
+vendor/lib/libqmi_cci.so
+vendor/lib/libqmi_client_helper.so
+vendor/lib/libqmi_client_qmux.so
+vendor/lib/libqmi_common_so.so
+vendor/lib/libqmi_csi.so
+vendor/lib/libqmi_encdec.so
+vendor/lib/libqmiservices.so
+vendor/lib/libqmi.so
