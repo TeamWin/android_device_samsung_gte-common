@@ -21,11 +21,5 @@ LOCAL_PATH := device/samsung/gte-common
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
-# FM
-TARGET_QCOM_NO_FM_FIRMWARE := true
-
 # Lights
 TARGET_PROVIDES_LIBLIGHT := false
-
-# Override to enable audio.
-BOARD_PROVIDES_LIBRIL := false
