@@ -31,7 +31,6 @@
 
 void init_target_properties(void)
 {
-	char bootloader[PROP_VALUE_MAX];
 	char *device = NULL;
 	char *model = NULL;
 	char *operator_alpha = NULL;
@@ -40,14 +39,14 @@ void init_target_properties(void)
 	int network_type = 1;
 
 	/* get the bootloader string */
-	property_get("ro.bootloader", bootloader);
+	std::string bootloader = property_get("ro.bootloader");
 
-	if (strstr(bootloader,"T377P")) {
+	if (bootloader.find("T377P") == 0) {
 		device = (char *)"gtesqltespr";
 		model = (char *)"SM-T377P";
 		network_type=CDMA_DEVICE;
 	}
-	else if (strstr(bootloader,"T560NUU")) {
+	else if (bootloader.find("T560NUU") == 0) {
 		device = (char *)"gtelwifiue";
 		model = (char *)"SM-T560NU";
 		network_type=WIFI_DEVICE;
@@ -56,6 +55,6 @@ void init_target_properties(void)
 		return;
 	}
 	/* set the properties */
-	set_target_properties((char *)bootloader, device, model,
+	set_target_properties((char *)bootloader.c_str(), device, model,
 		       network_type, operator_alpha, operator_numeric);
 }
